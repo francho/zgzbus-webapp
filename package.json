@@ -26,13 +26,13 @@
         "grunt-google-cdn": "~0.1.1",
         "grunt-ngmin": "~0.0.2",
         "karma": ">=0.8",
-        "yeoman": ">=0.9.6"
+        "yo": ">=1.0.4"
     },
     "engines": {
         "node": ">=0.8.0"
     },
 
     "scripts": {
-        "test": "./node_modules/.bin/yeoman test --verbose"
+        "test": "./node_modules/.bin/grunt test --verbose"
     }
 }
