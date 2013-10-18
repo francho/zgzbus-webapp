@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zgzbusWebappApp')
+angular.module('zgzbus')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

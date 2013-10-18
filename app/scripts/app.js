@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zgzbusWebappApp', [])
+angular.module('zgzbus', [])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
