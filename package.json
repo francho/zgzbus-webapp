@@ -25,13 +25,14 @@
         "matchdep": "~0.1.1",
         "grunt-google-cdn": "~0.1.1",
         "grunt-ngmin": "~0.0.2",
-        "karma": "~0.8"
+        "karma": "~0.8",
+        "yeoman": "~0.9.1"
     },
     "engines": {
         "node": ">=0.8.0"
     },
 
     "scripts": {
-        "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
+        "test": "./node_modules/.bin/yeoman test --verbose"
     }
 }
