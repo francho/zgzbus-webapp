@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zgzbus', [])
+angular.module('zgzbus', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
