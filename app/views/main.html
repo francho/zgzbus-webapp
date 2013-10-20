@@ -1,18 +1,12 @@
-<div class="row top-bar">
-    <div class="small-4 small-offset-4 columns">
-        <h2>Profile</h2>
+<h1>ZgzBus</h1>
+<div class="row">
+    <div class="small-2 large-4 columns">
+        <form name="form">
+            <input type="number" ng-model="busInfo.busStop" name="busStop" integer min="1" max="999">
+            {{ busInfo.busStop }}
+            <button ng-click="getBusTimeTable(busStop)">BUSCAR</button>
+        </form>
     </div>
-    <div class="small-4 columns">
-        <a href="#" class="top-bar-button right">Settings</a>
-    </div>
-</div>
-<!-- This space is for the app's content -->
-<div class="content"></div>
-<div class="nav">
-    <ul>
-        <li class="nav-button"><a href="#">Feed</a></li>
-        <li class="nav-button"><a href="#">Groups</a></li>
-        <li class="nav-button"><a href="#">Goals</a></li>
-        <li class="nav-button nav-me"><a href="#">Me</a></li>
-    </ul>
+    <div class="small-4 large-4 columns">{{busInfo.response}}</div>
+    <div class="small-6 large-4 columns">...</div>
 </div>
