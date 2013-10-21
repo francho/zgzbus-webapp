@@ -1,6 +1,6 @@
 {
     "name": "zgzbus",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "dependencies": {
         "angular": "~1.2.0-rc.3",
         "json3": "~3.2.4",
@@ -14,6 +14,6 @@
     "devDependencies": {
         "angular-mocks": "~1.2.0-rc.3",
         "angular-scenario": "~1.2.0-rc.3",
-        "chai": ">=1.8.1"
+        "chai": "~1.8.1"
     }
 }

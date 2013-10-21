@@ -7,7 +7,7 @@ basePath = '';
 files = [
     JASMINE,
     JASMINE_ADAPTER,
-    './node_modules/chai/chai.js',
+    'app/components/chai/chai.js',
     'app/components/angular/angular.js',
     'app/components/angular-route/angular-route.js',
     'app/components/angular-mocks/angular-mocks.js',
