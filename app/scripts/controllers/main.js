@@ -6,13 +6,12 @@ angular.module('zgzbus')
             busStop: 0,
             title: '',
             frequencies: [],
-            response: {}
+            error: null
         };
 
         $scope.getBusTimeTable = function () {
             BusTimesGetter.callWebService($scope.busInfo.busStop).then(function (data) {
-                $scope.busInfo.response = data;
+                angular.copy(data, $scope.busInfo);
             });
-
         };
     });

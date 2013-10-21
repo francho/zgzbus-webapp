@@ -2,11 +2,18 @@
 <div class="row">
     <div class="small-2 large-4 columns">
         <form name="form">
-            <input type="number" ng-model="busInfo.busStop" name="busStop" integer min="1" max="999">
-            {{ busInfo.busStop }}
-            <button ng-click="getBusTimeTable(busStop)">BUSCAR</button>
+            <input type="number" ng-model="busInfo.busStop" name="busStop" integer min="1" max="999"
+                   data-ng-change="getBusTimeTable()">
+            <button ng-click="getBusTimeTable()">BUSCAR</button>
         </form>
     </div>
-    <div class="small-4 large-4 columns">{{busInfo.response}}</div>
-    <div class="small-6 large-4 columns">...</div>
+    <div class="small-4 large-4 columns">
+        {{ busInfo.busStop }} {{busInfo.title}}</div>
+    <div class="small-6 large-4 columns" ng-if="busInfo.error">{{busInfo.error}}</div>
+</div>
+
+<div class="row" ng-repeat="busFreq in busInfo.frequencies">
+    <div class="small-4 large-4 columns">{{busFreq.bus}}</div>
+    <div class="small-4 large-4 columns">{{busFreq.timeToArrive}}</div>
+    <div class="small-4 large-4 columns">{{busFreq.destiny}}</div>
 </div>

@@ -21,19 +21,19 @@ describe('Controller: MainCtrl', function () {
         expect(scope.busInfo).to.not.be.undefined;
     });
 
-    it('should init busInfo.busStop property', function() {
+    it('should init busInfo.busStop property', function () {
         expect(scope.busInfo).to.ownProperty('busStop');
     });
 
-    it('should init busInfo.title property', function() {
+    it('should init busInfo.title property', function () {
         expect(scope.busInfo).to.ownProperty('title');
     });
 
-    it('should init busInfo.frequencies property', function() {
+    it('should init busInfo.frequencies property', function () {
         expect(scope.busInfo).to.ownProperty('frequencies');
     });
 
-    it('should have a method in the scope to launch the queries', function() {
+    it('should have a method in the scope to launch the queries', function () {
         expect(scope).to.respondTo('getBusTimeTable');
     });
 });
