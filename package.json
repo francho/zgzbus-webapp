@@ -25,6 +25,9 @@
         "matchdep": "~0.1.1",
         "grunt-google-cdn": "~0.1.1",
         "grunt-ngmin": "~0.0.2",
+        "bower": "~1.2.7",
+        "grunt-cli": "~0.1.9",
+        "yo": "~1.0.4",
         "karma": ">=0.8"
     },
     "engines": {
