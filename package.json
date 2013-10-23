@@ -30,8 +30,7 @@
     "phantomjs": "~1.9.2-2",
     "karma-junit-reporter": "~0.1.0",
     "karma-commonjs": "0.0.2",
-    "karma-phantomjs-launcher": "~0.1.0",
-    "grunt-cli": "~0.1.9"
+    "karma-phantomjs-launcher": "~0.1.0"
   },
   "engines": {
     "node": ">=0.8.0"
