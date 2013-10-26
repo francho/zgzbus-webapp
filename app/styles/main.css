@@ -10,7 +10,10 @@ header {
 section[role="region"] > header:first-child h1 {
     font-size: 2.5em;
     font-weight: bold;
-    padding: 0px 1rem 0px .6rem;
+    /*padding: 0px 1rem 0px .6rem;*/
+    padding: 0px 1rem 0px 52px;
+    margin-left:.6rem;
+    background: url(/img/zgzbus-48.png) 0 14px no-repeat;
 }
 h1 {
     float:left;
@@ -68,4 +71,11 @@ section[role="region"] > header:first-child form {
 }
 .distance3 {
     background: #79b638;
+}
+
+.first-screen {
+    background: url(/img/bg-zgzbus-128.png) no-repeat center center;
+    width: 100%;
+    height: 128px;
+    margin-top: 50px;
 }

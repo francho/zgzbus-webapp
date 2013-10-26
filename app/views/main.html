@@ -26,6 +26,7 @@
     </div>
     <div class="small-6 large-4 columns" ng-if="busInfo.error">{{busInfo.error}}</div>
 </div>
+        <div ng-if="!busInfo.frequencies.length" class="first-screen"></div>
 
 <div class="row resultado" ng-repeat="busFreq in busInfo.frequencies" ng-class="getDistanceClass(busFreq.timeToArrive)">
     <div class="small-4 large-4 columns poste">{{busFreq.bus}}</div>
