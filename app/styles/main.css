@@ -1,1 +1,62 @@
 /* Will be compiled down to a single stylesheet with your sass files */
+body {
+    font-size: 62.5%;
+    font-family: Arial;
+}
+header {
+    display: table;
+    width: 100%;
+}
+section[role="region"] > header:first-child h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 0px 1rem 0px .6rem;
+}
+h1 {
+    float:left;
+}
+h2 {
+    font-size: 2em;
+    padding: 0px 1rem 0px .6rem;
+}
+form input {
+    display: inline;
+    width: auto;
+    overflow: auto;
+    float: right;
+}
+h1, form {
+    display: table-cell;
+    vertical-align: middle;
+}
+section[role="region"] > header:first-child form {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 1.7rem .6rem 0;
+}
+.resultado {
+    background: #999;
+    border-radius: .5em;
+    margin: 0.5em;
+    padding: .5em;
+    clear: left;
+    overflow: auto;
+}
+.poste {
+    font-size: 5em;
+    font-weight: bold;
+    color: #eee;
+    float: left;
+    margin-right: .2em;
+}
+.tiempo, .direccion {
+    font-size: 1em;
+    color: #333;
+    font-size: 1.8em;
+}
+.tiempo {
+    font-weight: bold;
+    margin-top: .4em;
+}
