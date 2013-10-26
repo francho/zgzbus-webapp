@@ -60,3 +60,12 @@ section[role="region"] > header:first-child form {
     font-weight: bold;
     margin-top: .4em;
 }
+.distance1 {
+    background: #b63838;
+}
+.distance2 {
+    background: #b67638;
+}
+.distance3 {
+    background: #79b638;
+}
