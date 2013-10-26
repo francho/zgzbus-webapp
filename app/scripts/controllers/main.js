@@ -21,6 +21,19 @@ angular.module('zgzbus')
                 });
         };
 
+        $scope.getDistanceClass = function(timeToArrive) {
+            var parts = timeToArrive.split(' ');
+
+            var minutes = parts[0];
+
+            if(minutes < 2 || minutes ==='En la parada') {
+                return "distance1";
+            } else if(minutes < 5) {
+                return "distance2";
+            } else {
+                return "distance3";
+            }
+        };
 
         function setProgressOn() {
             $scope.inProgress = true;
