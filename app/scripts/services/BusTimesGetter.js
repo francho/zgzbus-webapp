@@ -48,8 +48,16 @@ angular.module('zgzbus').service('BusTimesGetter', function BusTimesGetter($http
                 var nextBusInfo = {
                     bus: matches[1],
                     timeToArrive: matches[2],
-                    destiny: item.json[1]
+                    destiny: item.json[1],
+                    order: 0
                 };
+
+                var parts = nextBusInfo.timeToArrive.split(' ');
+                var minutes = parseInt(parts[0]);
+                if(minutes===null) { minutes = 0 }
+
+                nextBusInfo.order = minutes;
+
 
                 wrappedData.frequencies.push(nextBusInfo);
             });
