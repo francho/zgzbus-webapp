@@ -4,9 +4,9 @@
     "description": "¿Cuando llega mi bus?",
     "launch_path": "/index.html",
     "icons": {
-        "16": "http://francho.webfactional.com/app/img/zgzbus-16.png",
-        "48": "http://francho.webfactional.com/app/img/zgzbus-48.png",
-        "128": "http://francho.webfactional.com/app/img/zgzbus-128.png"
+        "16": "img/zgzbus-16.png",
+        "48": "img/zgzbus-48.png",
+        "128": "img/zgzbus-128.png"
     },
     "developer": {
         "name": "francho & alberto & miguel",
