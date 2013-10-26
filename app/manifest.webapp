@@ -1,0 +1,29 @@
+{
+    "version": "0.1",
+    "name": "zgzbus",
+    "description": "¿Cuando llega mi bus?",
+    "launch_path": "/index.html",
+    "icons": {
+        "16": "http://francho.webfactional.com/app/img/zgzbus-16.png",
+        "48": "http://francho.webfactional.com/app/img/zgzbus-48.png",
+        "128": "http://francho.webfactional.com/app/img/zgzbus-128.png"
+    },
+    "developer": {
+        "name": "francho & alberto & miguel",
+        "url": "http://francho.org"
+    },
+    "installs_allowed_from": ["*"],
+    "locales": {
+        "es": {
+            "description": "¿cuando llega mi bus?",
+            "developer": {
+                "url": "http://francho.org/zgzbus"
+            }
+        }
+
+    },
+    "default_locale": "es",
+    "permissions": {
+        "systemXHR": {}
+    }
+}
